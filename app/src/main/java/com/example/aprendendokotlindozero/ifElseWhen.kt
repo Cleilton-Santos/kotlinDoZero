@@ -16,7 +16,7 @@ fun main(){
         println("Nnehuma opcao selecionada")
     }*/
 
-    val opcao = 4
+    /*val opcao = 4
 
     if (opcao in 1..3){
         println("Cartao de credito")
@@ -24,7 +24,16 @@ fun main(){
         println("Nao tem")
     }else{
         println("negado")
+    }*/
+    val opcao = 4
+    //println("Cartao de credito")
+    //println("Extrato Bancario")
+    //println("Saldo")
+    when(opcao){
+        1 -> println("Cartao de credito")
+        2 -> println("Extrato Bancario")
+        3 -> println("Saldo")
+        else -> println("Nnehuma opcao selecionada")
     }
-
 
 }
