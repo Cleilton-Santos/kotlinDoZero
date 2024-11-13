@@ -26,13 +26,14 @@ fun main(){
         println("negado")
     }*/
     val opcao = 4
+
     //println("Cartao de credito")
     //println("Extrato Bancario")
     //println("Saldo")
     when(opcao){
         1 -> println("Cartao de credito")
         2 -> println("Extrato Bancario")
-        3 -> println("Saldo")
+        in 3 .. 5 -> println("Saldo")//vamos supor que a pessoa utilize o saldo do 3 > 5
         else -> println("Nnehuma opcao selecionada")
     }
 
