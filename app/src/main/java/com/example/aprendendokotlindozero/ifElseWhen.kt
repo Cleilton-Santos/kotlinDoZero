@@ -20,6 +20,11 @@ fun main(){
 
     if (opcao in 1..3){
         println("Cartao de credito")
+    }else if (opcao in 4 .. 8){
+        println("Nao tem")
+    }else{
+        println("negado")
     }
+
 
 }
