@@ -9,7 +9,7 @@ fun main(){
     println(nomes[0])
     */
     var numero = 1
-    while (numero){
+    while (numero <= 5){
         println("Executou: $numero")
         numero++//incremento
     }
