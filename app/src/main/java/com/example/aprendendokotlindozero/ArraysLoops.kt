@@ -25,7 +25,7 @@ fun main(){
     )
 
     for ((indice, postagem) in postagens.withIndex()){
-        println("Titulo: $postagem")
+        println("$indice: $postagem")
     }
 
 }
