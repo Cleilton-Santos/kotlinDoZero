@@ -13,7 +13,7 @@ fun main(){
     }else if (opcao == 3){
         println("Saldo")
     }else{
-        println("Nnehuma opcao selecionada")
+        println("Nenhuma opcao selecionada")
     }*/
 
     /*val opcao = 4
@@ -34,7 +34,7 @@ fun main(){
         1 -> println("Cartao de credito")
         2 -> println("Extrato Bancario")
         in 3 .. 5 -> println("Saldo")//vamos supor que a pessoa utilize o saldo do 3 > 5
-        else -> println("Nnehuma opcao selecionada")
+        else -> println("Nenhuma opcao selecionada")
     }
 
 }
