@@ -5,5 +5,5 @@ package com.example.aprendendokotlindozero
 }*/
 
 fun main(){
-    somar()//Chamada da funcao
+    //somar()//Chamada da funcao
 }
