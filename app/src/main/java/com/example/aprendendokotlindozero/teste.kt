@@ -1,13 +1,14 @@
 package com.example.aprendendokotlindozero
 
 fun main(){
-    val motoristas = arrayOf(
+    /*val motoristas = arrayOf(
         "Cleilton", "Tuila", "Ubiratan", "Acerola"
-    )
-    if (motoristas == true){
+    )*/
+    val motoristas = 5
+    if (motoristas >= 5){
         println("Seja Bem Vindo")
-    }else if (){
-
+    }else{
+        println("Nenhuma escolha")
     }
 
     /*val motoristas = 2
