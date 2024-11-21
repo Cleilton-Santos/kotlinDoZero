@@ -7,7 +7,6 @@ fun sicrano():Boolean = (false)
 
 fun main(){
 
-
     /*val retorno = fulano() == sicrano()
     println(retorno)
 */
@@ -20,6 +19,7 @@ fun main(){
     }else{
         println("Nenhuma escolha")
     }*/
+
     /*val motoristas = 2
 
     for (betoneiros in motoristas){
