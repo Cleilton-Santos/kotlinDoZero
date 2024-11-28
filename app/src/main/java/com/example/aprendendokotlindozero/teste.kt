@@ -4,8 +4,12 @@ package com.example.aprendendokotlindozero
 fun fulano():Boolean = (true)
 fun sicrano():Boolean = (false)
 */
+fun soma(number1: Int, number2: Int = 0, numero3: Int){
+    println(number1 + number2 + numero3)
+}
 
 fun main(){
+    soma(23, 77, 34)
 
     /*val retorno = fulano() == sicrano()
     println(retorno)
