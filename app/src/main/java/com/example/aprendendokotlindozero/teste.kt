@@ -3,13 +3,24 @@ package com.example.aprendendokotlindozero
 /*
 fun fulano():Boolean = (true)
 fun sicrano():Boolean = (false)
-*/
+*//*
 fun soma(number1: Int, number2: Int = 0, numero3: Int){
     println(number1 + number2 + numero3)
+}*/
+class Usu{
+    val nome: String = ""
+    val sobrenome: String = ""
+
+    fun logar(nome: String, sobrenome: String){
+        println("Usuario logado na base de dados")
+    }
 }
 
 fun main(){
-    soma(23, 77, 34)
+    val usu1 = Usu()
+    usu1.logar("Cleilton", "Santos")
+    println(usu1)
+    /*soma(23, numero3 = 65)*/
 
     /*val retorno = fulano() == sicrano()
     println(retorno)
