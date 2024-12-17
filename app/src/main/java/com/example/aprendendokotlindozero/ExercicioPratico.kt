@@ -12,22 +12,45 @@ class ContaBancaria (
     init {
         usuarioAutenticado = true
     }
-    fun retornarSaldo(): Double {
+    fun recuperarSaldo(): Double {
         return if (usuarioAutenticado) saldo else 0.0
     }
-    fun depositar(deposito1: Double = 40.5){
-        println(saldo + deposito1)
+    fun depositar(deposito: Double ){
+        if (deposito > 0) {
+            saldo += deposito
+            println("Depósito de R$$deposito realizado com sucesso!")
+        } else {
+            println("O valor do depósito deve ser maior que 0.")
+        }
     }
-    fun sacar(saque1: Double = 20.0){
-        println(saldo - saque1)
+    fun sacar(saque: Double) {
+        if (usuarioAutenticado) {
+            if (saque > 0 && saque <= saldo) {
+                saldo -= saque
+                println("Saque de R$$saque realizado com sucesso!")
+            } else if (saque > saldo) {
+                println("Saldo insuficiente para o saque.")
+            } else {
+                println("O valor do saque deve ser maior que 0.")
+            }
+        } else {
+            println("Usuário não autenticado. Não é possível realizar saques.")
+        }
+    }
+    fun extrato(dias: Int){
+        println("Extrato dos ultimos $dias dias ")
+    }
+    fun extrato(dataInicial: String, dataFinal: String){
+        println("Extrato intervalo $dataInicial a $dataFinal")
     }
 }
 
 fun main(){
     val conta = ContaBancaria("PicPay", "Simao Dias", "cleitinquebradeira46")
-    val deposito = conta.retornarSaldo()
-    println("Usuario Autenticado: ${conta.usuarioAutenticado}")
-    println("Agencia: ${conta.agencia}")
-    println("Conta: ${conta.conta}")
-    println("Saldo: $deposito")
+    println("Saldo: ${conta.recuperarSaldo()}")
+    conta.depositar(200.0)
+    conta.sacar(500.0)
+    println("Saldo: ${conta.recuperarSaldo()}")
+    conta.extrato(10)
+    conta.extrato("01/01/24", "30/03/24")
 }
